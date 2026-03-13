@@ -1,0 +1,4 @@
+transformed_data.csv
+log_file.txt
+__pycache__/
+*.pyc

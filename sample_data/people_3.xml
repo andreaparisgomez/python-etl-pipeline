@@ -1,0 +1,12 @@
+<people>
+    <person>
+        <name>Frank</name>
+        <height>69</height>
+        <weight>170</weight>
+    </person>
+    <person>
+        <name>Grace</name>
+        <height>66</height>
+        <weight>140</weight>
+    </person>
+</people>

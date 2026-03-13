@@ -61,17 +61,28 @@ def log_progress(message):
 
 # Main pipeline execution
 def main():
+    # Log ETL start
     log_progress("ETL Job Started")
 
+    # Extraction phase
+    log_progress("Extract phase Started")
     extracted_data = extract()
-    log_progress("Data extraction completed")
+    log_progress("Extract phase Ended")
 
+    # Transformation phase
+    log_progress("Transform phase Started")
     transformed_data = transform(extracted_data)
-    log_progress("Data transformation completed")
+    print("Transformed Data")
+    print(transformed_data)
+    log_progress("Transform phase Ended")
 
+    # Loading phase
+    log_progress("Load phase Started")
     load_data(target_file, transformed_data)
-    log_progress("Data loaded successfully")
+    log_progress("Load phase Ended")
 
+    # Final log
+    log_progress("ETL Job Ended")
 
 if __name__ == "__main__":
     main()

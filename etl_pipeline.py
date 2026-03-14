@@ -53,7 +53,7 @@ def load_data(target_file, transformed_data):
     transformed_data.to_csv(target_file, index=False)
 
 def log_progress(message):
-    timestamp_format = '%Y-%h-%d-%H:%M:%S'
+    timestamp_format = '%Y-%m-%d-%H:%M:%S'
     now = datetime.now()
     timestamp = now.strftime(timestamp_format)
     with open(log_file, "a") as f:
